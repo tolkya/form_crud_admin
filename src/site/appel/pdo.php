@@ -1,7 +1,7 @@
 <?php    
 // config/config.php
 $host = 'db';
-$dbname = 'nomdelabasededonnnée';
+$dbname = 'moto4';
 $username = 'root'; // Modifie si nécessaire
 $password = 'root'; // Modifie si nécessaire
 
