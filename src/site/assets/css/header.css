@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;  /* Fixe le header en haut de l'écran */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Le header prend toute la largeur */
+    height: 10dvh; /* Hauteur dynamique = 10% de la hauteur de l'écran */
+    display: flex;  /* Active le flexbox pour aligner les éléments */
+    justify-content: space-between;  /* Répartit les éléments (gauche, centre, droite) */
+    align-items: center;  /* Centre verticalement les éléments */
+    background: #333;  /* Couleur de fond sombre */
+    color: white;  /* Texte blanc */
+    padding: 0 2vw;  /* Espacement horizontal basé sur la largeur de l'écran */
+    z-index: 1000;  /* Met le header au-dessus des autres éléments */
+}
+
+
+.logo {
+    text-decoration: none;  /* Supprime le soulignement du lien */
+    color: white;  /* Texte blanc */
+    font-size: 1.4rem; /* Taille du texte en fonction de la base du document */
+    font-weight: bold;  /* Texte en gras */
+    text-align: center;
+}
+
+.logo-img {
+    height: 4dvh;
+}
+
+a:hover {
+    text-shadow: 2px 2px 4px rgba(252, 0, 0, 0.842);
+  }
+
+@keyframes colorChange {
+    0% { color: #0004ff; } 
+    50% { color: #ffffff; } 
+    100% { color: #ff0000; }
+}
+h2#title {
+    flex: 1;  /* Permet au titre de prendre toute la place restante */
+    text-align: center;  /* Centre le texte */
+    font-size: 4dvh; /* Ajuste la taille pour être plus visible */
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: colorChange 2s infinite alternate;
+}
+
+.auth {
+    display: flex;  /* Active le flexbox pour aligner les boutons horizontalement */
+    gap: 2vw; /* Ajoute un espacement entre les boutons */
+}
+
+
+.username {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+}
+
+
+
+.btn {
+    text-decoration: none; /* Supprime le soulignement */
+    color: white; /* Texte blanc */
+    background: #ff0000; /* Couleur bleue */
+    padding: 0.5em 1.2em; /* Ajoute un padding fluide */
+    border-radius: 0.5rem; /* Arrondit les bords */
+    font-size: 1.1rem; /* Ajuste la taille du texte */
+}
+
+.btn:hover {
+    background: #b30000; /* Change la couleur au survol */
+}
+
+
+/* Ajoute un padding en haut pour éviter que le contenu soit caché sous le header */
+body {
+    padding-top: 10dvh; /* Décale le contenu sous le header */
+    font-size: 1rem; /* Définit une base pour éviter les variations */
+}

@@ -1,0 +1,137 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style du body */
+body {
+    margin-top: 10dvh;
+    background-image: url(../images/fondmoto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Titre principal */
+.entry {
+    color: white;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Lien Ajouter une moto */
+.a {
+    text-decoration: none;
+    color: white;
+    background-color: #28a745;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.a:hover {
+    background-color: #218838;
+}
+
+/* Conteneur principal des motos */
+.ensemble {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Carte individuelle de chaque moto */
+.pourchaque {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.pourchaque:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Image des motos */
+.pourchaque img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Détails de la moto */
+.pourchaque h2 {
+    margin: 1px 0;
+    color: #000000;
+    font-size: 24px;
+    text-align: left;
+    text-decoration: underline;
+}
+.pourchaque p {
+    margin: 1px 0;
+    color: #000000;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Boutons Modifier et Supprimer */
+.pourchaque form {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.pourchaque button,
+.pourchaque input[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Bouton Modifier */
+.pourchaque button {
+    background-color: #007BFF;
+    color: white;
+}
+
+.pourchaque button:hover {
+    background-color: #0056b3;
+}
+
+/* Bouton Supprimer */
+.pourchaque input[type="submit"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.pourchaque input[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ensemble {
+        grid-template-columns: 1fr;
+    }
+}

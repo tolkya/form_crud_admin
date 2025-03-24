@@ -1,0 +1,168 @@
+body {
+  background-image: url(../images/fondrelog.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 120dvh;
+  font-family: arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container {
+  position: relative;
+}
+
+
+
+
+form {
+  background: rgba(32, 30, 30, 0.3);
+  padding: 3rem 4rem; /* Augmente le padding en haut et réduit celui du bas */
+  min-height: 500px; /* Permet d'éviter un problème d'affichage si le contenu change */
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  backdrop-filter: blur(1px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+  text-align: center;
+}
+
+.container h2{
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  opacity: .7;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.425);
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  opacity: .7;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.425);
+}
+  
+a {
+  text-decoration:underline;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+a:hover {
+  text-shadow: 2px 2px 4px rgba(252, 0, 0, 0.842);
+}
+
+a:active {
+  text-shadow: none;
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  border-right: 1px solid rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%; /* Remplit toute la largeur du formulaire */
+  max-width: 300px; /* Évite que les champs soient trop larges */
+  padding: 1rem;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(255, 255, 255, 0.253);
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 4px rgba(252, 0, 0, 0.842);
+  transition: all .3s;
+  margin-bottom: 2em;
+}
+
+input:hover,
+input[type="email"]:focus,
+input[type="password"]:focus{
+  background: rgba(255,255,255,0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+}
+    
+input[type="button"] {
+  background: rgba(235, 0, 0, 0.151);
+  box-shadow: 2px 2px 30px rgba(255, 0, 0, 0.829);
+  margin-top: 10px;
+  width: 250px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+.drop {
+  background: rgba(112, 68, 68, 0.349);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  box-shadow: 10px 10px 60px -8px rgba(204, 30, 30, 0.986);
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+.drop-1 {
+height: 80px; width: 80px;
+top: -30px; left: -40px;
+z-index: -1;
+}
+
+.drop-2 {
+height: 80px; width: 80px;
+bottom: -30px; right: 10px;
+}
+
+.drop-3 {
+height: 100px; width: 100px;
+bottom: 320px; right: -80px;
+z-index: -1;
+}
+
+.drop-4 {
+height: 120px; width: 120px;
+top: -70px; right: -50px;
+}
+
+.drop-5 {
+height: 60px; width: 60px;
+bottom: -40px; left: 20px;
+z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+      padding: 2rem;
+      width: 90%;
+  }
+
+  .container h2 {
+      font-size: 2.5rem;
+  }
+
+  p {
+      font-size: 1.2rem;
+  }
+
+  input {
+      max-width: 100%;
+      padding: 0.8rem;
+  }
+}
