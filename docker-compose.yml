@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: stackdocker
+    container_name: stackdocker_php
     ports:
       - "8080:80"
     volumes:
@@ -15,7 +15,7 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: stackdocker
+    container_name: stackdocker_db
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -29,7 +29,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: stackdocker
+    container_name: stackdocker_phpmyadmin
     restart: always
     ports:
       - "8081:80"
