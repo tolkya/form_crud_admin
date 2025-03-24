@@ -16,7 +16,7 @@ if ($user_id) { // Si l'utilisateur est connecté (id présent)
 
 <header>
     <a href="../public/moto.php" class="logo"><img src="../assets/images/logo.png" alt="Logo du site" class="logo-img"></a>
-    <h2 id="title">titredeTonSite</h2>
+    <h2 id="title">Honda de France</h2>
     <div class="auth">
         <?php if ($username): ?>
             <a type=button class="username" href="../privee/dashboard.php">👤 <?php echo $username; ?></a>
